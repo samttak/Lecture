@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+    <title>Develop Tomorrow</title>
+    <style>
+      :root {
+        --ti-cursor-margin-left: 0.1em;
+        --ti-cursor-color: #1a29f5;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000000;
+        color: white;
+        font-size: 3rem;
+        font-family: 'notosanc black', sans-serif;
+      }
+      h1 {
+        margin-bottom: 0px;
+      }
+      h2 {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Develop Tomorrow</h1>
+    <h2>SuperCoding</h2>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        new TypeIt('#title') //
+          .pause(1000)
+          .delete(16, { delay: 1000 })
+          .type('Develop Today, Make Tomorrow')
+          .go();
+      });
+    </script>
+  </body>
+</html>
